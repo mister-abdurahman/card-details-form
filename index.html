@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Card Details Form</title>
+  </head>
+  <body>
+    <img src="img/bg-main-desktop.png" alt="" class="bg-img" />
+    <img src="img/bg-main-mobile.png" alt="" class="bg-img-xs" />
+
+    <div class="container">
+      <section class="card-display">
+        <div class="card-front">
+          <img src="img/bg-card-front.png" alt="" class="card-front-img" />
+          <img
+            src="img/card-logo.svg"
+            alt="look for card-logo-svg"
+            class="card-logo"
+          />
+
+          <p class="card-number-display">0000 0000 0000 0000</p>
+          <p class="cardholder-display">Abdurahman Aramide</p>
+          <p class="expiry-month-display">12</p>
+          <p class="expiry-divider-display"></p>
+          <p class="expiry-year-display">2025</p>
+        </div>
+
+        <div class="card-back">
+          <img src="img/bg-card-back.png" alt="" class="card-back-img" />
+          <p class="cvc-display"></p>
+        </div>
+      </section>
+
+      <section class="card-details">
+        <form action="" id="myForm" name="myForm">
+          <label for="cardholder-name">Cardholder Name</label>
+          <input
+            type="text"
+            class="cardholder-name"
+            id="cardholder-name"
+            name="cardholder-name"
+            placeholder="e.g Ramadan Aramide"
+          />
+          <!-- <p id="errorMsg"></p> -->
+
+          <label for="card-number">Cardholder Number</label>
+          <input
+            type="text"
+            class="card-number"
+            id="card-number"
+            name="card-number"
+            placeholder="e.g Ramadan Aramide"
+          />
+          <!-- <p id="card-num-error"></p> -->
+
+          <div class="flex">
+            <label for="expiry-date" class="expiry-date">
+              Exp. Date (MM/YY)
+              <br />
+              <input
+                type="text"
+                class="expiry"
+                name="expiry-date"
+                placeholder="MM"
+              />
+
+              <input
+                type="text"
+                class="expiry"
+                name="expiry-date"
+                placeholder="YYYY"
+              />
+              <!-- <p id="expiry-error"></p> -->
+            </label>
+            <label for="cvc" class="cvc"
+              >CVC
+              <br />
+              <input
+                type="text"
+                id="cvc"
+                name="cvc"
+                class="cvc"
+                placeholder="e.g 123"
+              />
+              <!-- <p id="error-cvc"></p> -->
+            </label>
+          </div>
+          <button id="submit">Confirm</button>
+        </form>
+
+        <div id="thank-you" class="thank-you hidden">
+          <img src="img/icon-complete.svg" alt="" />
+          <h2 id="thank-you-header">Thank you!</h2>
+          <p>We've added your card details</p>
+          <button id="reset">Reset Details</button>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- js, [34:00] -->
