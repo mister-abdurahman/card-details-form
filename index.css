@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
 }
 body {
   height: 100vh;
@@ -14,7 +18,7 @@ body {
 }
 .bg-img {
   position: absolute;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 .bg-img-xs {
@@ -49,12 +53,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 .card-front {
-  left: 210px;
+  left: 75px;
   top: 130px;
 }
 .card-back {
-  left: 200px;
-  bottom: 130px;
+  left: 190px;
+  bottom: 150px;
 }
 .card-logo,
 .card-number-display,
@@ -77,20 +81,23 @@ body {
   letter-spacing: 5px;
 }
 .cardholder-display {
-  bottom: 30px;
+  bottom: 32px;
   left: 30px;
-  font-size: 0.9em;
+  font-size: 0.6em;
+  letter-spacing: 0.05cm;
   text-transform: uppercase;
 }
 .expiry-month-display {
-  bottom: 30px;
+  bottom: 32px;
   right: 85px;
-  font-size: 0.9em;
+  font-size: 0.65em;
+  letter-spacing: 0.05cm;
 }
 .expiry-year-display {
-  bottom: 30px;
-  right: 30px;
-  font-size: 0.9em;
+  bottom: 32px;
+  right: 37px;
+  font-size: 0.65em;
+  letter-spacing: 0.05cm;
 }
 .expiry-divider-display {
   bottom: 30px;
@@ -100,14 +107,16 @@ body {
 .cvc-display {
   right: 60px;
   position: absolute;
-  bottom: 117px;
+  bottom: 120px;
+  font-size: 0.65em;
+  letter-spacing: 0.05cm;
 }
 form {
   height: 350px;
 }
 label {
   display: block;
-  font-size: 14px;
+  font-size: 0.75rem;
   font-weight: 500;
   margin-bottom: 5px;
   margin-top: 10px;
@@ -169,13 +178,13 @@ input .cvc {
 .card-details {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 button {
   all: unset;
   text-align: center;
   border: 1px solid black;
-  width: 100px;
+  width: 100%;
   border-radius: 5px;
   padding: 10px 0;
   font-size: 16px;
@@ -189,6 +198,17 @@ button:hover {
 }
 .hidden {
   display: none;
+}
+.the-thank-you {
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+.thank-you img {
+  width: 70px;
+  /* margin-bottom: 35px; */
 }
 
 @media screen and (max-width: 1080px) {
